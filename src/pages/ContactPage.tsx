@@ -67,6 +67,7 @@ interface FormspreeResponse {
       {/* Contact Information */}
       <section className="py-16 md:py-20">
         <div className="container">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Get in Touch with Our Loan Experts</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             <AnimatedElement className="card p-6 text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-4">
@@ -263,7 +264,7 @@ interface FormspreeResponse {
                   <div className="flex items-center">
                     <Phone size={20} className="mr-2 text-primary" />
                     <a href="tel:+919884605677" className="text-primary font-medium">
-                      +91 98846 05677
+                      +91 98410 78770
                     </a>
                   </div>
                 </div>

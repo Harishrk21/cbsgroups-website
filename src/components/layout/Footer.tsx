@@ -6,7 +6,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-primary text-white pt-12 pb-6">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Chetana Business Solutions</h3>
@@ -64,6 +65,43 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
+          {/* External Resources */}
+<div>
+  <h3 className="text-xl font-bold mb-4">Useful Tools</h3>
+  <ul className="space-y-2">
+    <li>
+      <a 
+        href="https://www.cibil.com/freecibilscore" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-white transition-colors"
+      >
+        Check Your CIBIL Score
+      </a>
+    </li>
+    <li>
+      <a 
+        href="https://www.rbi.org.in/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-white transition-colors"
+      >
+        RBI Guidelines
+      </a>
+    </li>
+    <li>
+      <a 
+        href="https://www.paisabazaar.com/tools/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-white transition-colors"
+      >
+        Financial Calculators
+      </a>
+    </li>
+  </ul>
+</div>
+
 
           {/* Loans */}
           <div>

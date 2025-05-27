@@ -96,6 +96,7 @@ const BlogPage: React.FC = () => {
       {/* Blog Content */}
       <section className="py-16 md:py-20">
         <div className="container">
+          <h2 className="sr-only">Blog Articles</h2>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Sidebar */}
             <div className="lg:col-span-1">
@@ -145,6 +146,7 @@ const BlogPage: React.FC = () => {
 
             {/* Blog Posts */}
             <div className="lg:col-span-3">
+              <h2 className="text-2xl font-bold mb-8">Latest Articles</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {filteredPosts.map((post, index) => (
                   <AnimatedElement key={post.id} delay={index % 2} className="h-full">

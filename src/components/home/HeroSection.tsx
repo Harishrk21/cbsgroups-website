@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
 
           <AnimatedElement delay={1}>
             <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-dark mb-4">Quick Loan Enquiry</h3>
+              <h2 className="text-xl font-semibold text-dark mb-4">Quick Loan Enquiry</h2>
 
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>

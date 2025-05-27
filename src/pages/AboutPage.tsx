@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <AnimatedElement className="card p-8">
-              <h3 className="text-2xl font-bold mb-4 text-primary">Our Vision</h3>
+              <h2 className="text-2xl font-bold mb-4 text-primary">Our Vision</h2>
               <p className="text-text-light mb-6">
                 To be the most trusted financial partner for businesses, enabling their growth through innovative and accessible financial solutions.
               </p>
@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
             </AnimatedElement>
             
             <AnimatedElement delay={1} className="card p-8">
-              <h3 className="text-2xl font-bold mb-4 text-primary">Our Mission</h3>
+              <h2 className="text-2xl font-bold mb-4 text-primary">Our Mission</h2>
               <p className="text-text-light mb-6">
                 To provide timely, transparent, and tailored financial solutions that meet the diverse needs of businesses at every stage of their journey.
               </p>

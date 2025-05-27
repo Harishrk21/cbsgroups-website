@@ -279,6 +279,7 @@ const LoanPage: React.FC = () => {
                 {loan.icon}
                 <span className="ml-2 font-medium">Financial Solutions</span>
               </div>
+              
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{loan.title}</h1>
               <p className="text-lg text-gray-200 mb-8">{loan.description}</p>
               <div className="flex flex-col sm:flex-row gap-4">
