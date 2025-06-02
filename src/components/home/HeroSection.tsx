@@ -54,12 +54,11 @@ const HeroSection: React.FC = () => {
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <AnimatedElement>
-              <header> {/* Add header element for semantic structure */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Leading Private Finance Solutions for Business Growth
-          </h1>
-        </header>
-          
+            {/* Main H1 - Most important for SEO */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Leading Private Finance Solutions for Business Growth
+            </h1>
+            
             <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-lg">
               Welcome to Chetana Business Solutions, providing businesses with financial support across Chennai, Pondicherry, Hyderabad, and Bangalore. Specializing in unsecured business loans with minimal documentation.
             </p>
@@ -91,6 +90,7 @@ const HeroSection: React.FC = () => {
 
           <AnimatedElement delay={1}>
             <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+              {/* H2 for form section */}
               <h2 className="text-xl font-semibold text-dark mb-4">Quick Loan Enquiry</h2>
 
               <form className="space-y-4" onSubmit={handleSubmit}>

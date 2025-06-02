@@ -1,6 +1,5 @@
 import React from 'react';
 import { ClockIcon, Banknote, ShieldCheck, Users, FileCheck, ThumbsUp } from 'lucide-react';
-import SectionTitle from '../common/SectionTitle';
 import AnimatedElement from '../common/AnimatedElement';
 
 const WhyChooseUs: React.FC = () => {
@@ -30,11 +29,15 @@ const WhyChooseUs: React.FC = () => {
   return (
     <section className="py-16 md:py-20 bg-primary text-white">
       <div className="container">
-        <SectionTitle
-          title="Why Choose Chetana Business Solutions"
-          subtitle="We are the leading private finance company providing comprehensive financial support across Chennai, Pondicherry, Hyderabad, and Bangalore."
-          className="text-white"
-        />
+        {/* H2 for SEO structure */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Why Choose Chetana Business Solutions
+          </h2>
+          <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+            We are the leading private finance company providing comprehensive financial support across Chennai, Pondicherry, Hyderabad, and Bangalore.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
@@ -43,6 +46,7 @@ const WhyChooseUs: React.FC = () => {
                 <div className="mb-4 text-secondary">
                   {feature.icon}
                 </div>
+                {/* H3 for each feature */}
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="text-gray-200">{feature.description}</p>
               </div>

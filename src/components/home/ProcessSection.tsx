@@ -1,6 +1,5 @@
 import React from 'react';
 import { ClipboardCheck, FileSearch, Ban as Bank, CheckCircle } from 'lucide-react';
-import SectionTitle from '../common/SectionTitle';
 import AnimatedElement from '../common/AnimatedElement';
 
 const ProcessSection: React.FC = () => {
@@ -30,10 +29,15 @@ const ProcessSection: React.FC = () => {
   return (
     <section className="py-16 md:py-20">
       <div className="container">
-        <SectionTitle
-          title="Simple 4-Step Loan Process"
-          subtitle="We've streamlined our loan application and approval process to get you funded quickly with minimal hassle."
-        />
+        {/* H2 for SEO structure */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Simple 4-Step Loan Process
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            We've streamlined our loan application and approval process to get you funded quickly with minimal hassle.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
           {/* Progress Line (hidden on mobile) */}
@@ -50,6 +54,7 @@ const ProcessSection: React.FC = () => {
                 <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-sm">
                   {index + 1}
                 </div>
+                {/* H3 for each step */}
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-text-light">{step.description}</p>
               </div>

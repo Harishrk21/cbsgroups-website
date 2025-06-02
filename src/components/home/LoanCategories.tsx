@@ -41,16 +41,20 @@ const LoanCategories: React.FC = () => {
       icon: <Building2 size={32} />,
       link: '/loans/cgtsme'
     }
-    
   ];
 
   return (
     <section className="py-16 md:py-20 bg-light">
       <div className="container">
-        <SectionTitle
-          title="Financial Solutions For Every Need"
-          subtitle="Embark on a Thriving Financial Journey with Chetana Business Solutions: Unlocking the Power of Personalized Loans for Your Unique Dreams and Aspirations"
-        />
+        {/* Using H2 instead of generic SectionTitle for better SEO */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Financial Solutions For Every Need
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Embark on a Thriving Financial Journey with Chetana Business Solutions: Unlocking the Power of Personalized Loans for Your Unique Dreams and Aspirations
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {loans.map((loan, index) => (
