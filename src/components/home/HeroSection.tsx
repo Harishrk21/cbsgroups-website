@@ -54,9 +54,12 @@ const HeroSection: React.FC = () => {
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <AnimatedElement>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Leading Private Finance Solutions for Business Growth
-            </h1>
+              <header> {/* Add header element for semantic structure */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Leading Private Finance Solutions for Business Growth
+          </h1>
+        </header>
+          
             <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-lg">
               Welcome to Chetana Business Solutions, providing businesses with financial support across Chennai, Pondicherry, Hyderabad, and Bangalore. Specializing in unsecured business loans with minimal documentation.
             </p>
